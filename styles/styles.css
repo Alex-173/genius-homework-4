@@ -124,7 +124,7 @@ address {
 
 .logo {
   color: var(--beauty-landing-1);
-  font-family: Play;
+  font-family: Play, sans-serif;
   font-size: 22px;
   font-weight: 700;
 }
