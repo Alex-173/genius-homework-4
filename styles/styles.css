@@ -652,11 +652,12 @@ address {
   max-width: 100%;
   margin: 0 0 32px 0;
   color: var(--beauty-landing-4);
-  width: 276px;
+  width: 284px;
   height: 52px;
   font-size: 22px;
   font-weight: 600;
   line-height: 1.2;
+  text-align: center;
 }
 
 .modal-span {
