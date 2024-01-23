@@ -455,6 +455,7 @@ address {
   flex-shrink: 0;
 }
 .servises-article-title {
+  font-weight: 400;
   width: 142px;
   text-align: center;
   color: var(--beauty-landing-4);
