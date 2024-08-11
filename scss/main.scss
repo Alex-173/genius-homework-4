@@ -1,0 +1,19 @@
+@import "./base";
+@import "./utils/fonts";
+@import "./utils/variables";
+@import "./utils/animations";
+
+@import "./layouts/header";
+@import "./layouts/hero-section";
+@import "./layouts/advantages-section";
+@import "./layouts/main-section";
+@import "./layouts/about-us-section";
+@import "./layouts/servises-section";
+@import "./layouts/contact-section";
+@import "./layouts/footer";
+@import "./layouts/mob-menu";
+
+@import "./components/backdrop";
+@import "./components/button";
+@import "./components/text-accent";
+@import "./components/form";

@@ -1,0 +1,25 @@
+/* Main */
+.main {
+	display: flex;
+	max-width: 1749px;
+	margin: 0 auto;
+	width: 100%;
+	display: block;
+	background-image: url(/media/background3.svg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center top 620px;
+	position: relative;
+
+	@media screen and (max-width: $bp-desktop) {
+		background-position: top 150px center;
+		width: 100%;
+		background-size: cover;
+	}
+
+	@media screen and (max-width: $bp-tablet) {
+		background-position: top 36px center;
+		background-image: url(/media/background3.svg);
+		background-size: cover;
+	}
+}

@@ -1,0 +1,146 @@
+/* Services */
+// /* Services */
+.services-section {
+	margin: 0 auto;
+	margin-bottom: 96px;
+
+	@media screen and (max-width: $bp-desktop) {
+		margin-bottom: 40px;
+	}
+
+	&__container {
+		margin: 0 auto;
+		display: flex;
+		max-width: 1280px;
+		gap: 32px;
+		align-items: center;
+		justify-content: center;
+
+		@media screen and (max-width: $bp-tablet) {
+			max-width: 330px;
+		}
+	}
+
+	&__title {
+		text-align: center;
+		margin: 0px 0px 48px 0px;
+
+		@media screen and (max-width: $bp-desktop) {
+			min-width: 247px;
+			font-size: 32px;
+			font-weight: 500;
+			margin-bottom: 24px;
+			text-align: center;
+		}
+	}
+
+	&__swiper {
+		overflow: hidden;
+	}
+	&__list {
+		margin-bottom: 32px;
+		padding-left: 0px;
+	}
+
+	&__link {
+		width: 344px;
+		height: 456px;
+
+		@media screen and (max-width: $bp-desktop) {
+			max-width: 344px;
+		}
+	}
+
+	&__img {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		border-radius: 4px 120px;
+		width: 100%;
+		height: 100%;
+		z-index: -1;
+	}
+
+	&__article {
+		display: flex;
+		position: relative;
+		width: 344px;
+		height: 456px;
+		padding: 24px;
+		flex-direction: column;
+		justify-content: flex-end;
+		border-radius: 4px 120px;
+		background: linear-gradient(
+			180.05deg,
+			rgba(1, 28, 68, 0) 48.53%,
+			rgba(1, 28, 68, 0.725825) 84.61%,
+			#011c44 101.39%
+		);
+	}
+
+	&__article-title {
+		font-size: 20px;
+		font-weight: 400;
+		line-height: 1.2;
+		text-align: center;
+		color: var(--beauty-landing-4);
+	}
+
+	&__carousel {
+		background-color: transparent;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 44px;
+		height: 44px;
+		border-radius: 50%;
+		border: 1px solid var(--beauty-landing-2);
+		cursor: pointer;
+
+		@media screen and (max-width: $bp-desktop) {
+			display: none;
+		}
+		@media screen and (max-width: $bp-tablet) {
+			display: none;
+		}
+	}
+
+	&__carousel.prev {
+		transform: rotate(180deg);
+	}
+
+	&__carousel:hover {
+		background-color: var(--beauty-landing-1);
+	}
+
+	&__arrow {
+		fill: var(--beauty-landing-2);
+		width: 40px;
+		height: 40px;
+	}
+
+	&__arrow:hover {
+		fill: var(--beauty-landing-4);
+	}
+}
+
+.pagination {
+	margin-top: 24px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 24px;
+
+	&__button {
+		width: 12px;
+		height: 12px;
+		border-radius: 50%;
+		background-color: var(--beauty-landing-6);
+
+		&--active {
+			background-color: var(--beauty-landing-1);
+		}
+	}
+}

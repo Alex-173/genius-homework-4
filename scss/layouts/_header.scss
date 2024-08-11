@@ -1,0 +1,114 @@
+/* Header */
+.header {
+	display: flex;
+	justify-content: center;
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 100%;
+	height: 106px;
+	background: rgba(255, 255, 255, 0.25);
+	backdrop-filter: blur(5px);
+	z-index: 1;
+
+	@media screen and (max-width: 1240px) {
+		justify-content: space-between;
+		backdrop-filter: none;
+		background: transparent;
+	}
+
+	&__container {
+		width: 1240px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		gap: 240px;
+
+		@media screen and (max-width: 1240px) {
+			width: 100%;
+		}
+	}
+
+	&__logo {
+		color: var(--beauty-landing-1);
+		font-family: Play, sans-serif;
+		font-size: 22px;
+		font-weight: 700;
+		@media screen and (max-width: 1240px) {
+			position: absolute;
+			top: 30px;
+			left: 20px;
+			font-size: 16px;
+		}
+	}
+
+	&__menu {
+		display: flex;
+		width: 525px;
+		gap: 56px;
+		flex-grow: 1;
+		white-space: nowrap;
+		padding: 0;
+		justify-content: center;
+
+		@media screen and (max-width: 1240px) {
+			display: none;
+		}
+	}
+	&__link {
+		color: var(--beauty-landing-2);
+		line-height: normal;
+		text-decoration: none;
+		font-weight: 400;
+		width: auto;
+		transition: color 0.3s ease;
+	}
+	&__link:hover {
+		text-decoration: none;
+		color: var(--beauty-landing-1);
+		text-shadow: 0px 1px 1px var(--beauty-landing-1);
+		line-height: normal;
+		cursor: pointer;
+	}
+	&__icons {
+		display: flex;
+		gap: 32px;
+		@media screen and (max-width: 1240px) {
+			display: none;
+		}
+	}
+	&__icon {
+		width: 32px;
+		height: 32px;
+		fill: var(--beauty-landing-2);
+		transition: fill 0.3s ease-in;
+	}
+
+	&__icon:hover {
+		fill: var(--beauty-landing-1);
+	}
+
+	&__burger-btn {
+		display: none;
+
+		@media screen and (max-width: 1240px) {
+			display: block;
+			position: absolute;
+			top: 30px;
+			right: 20px;
+			width: 24px;
+			height: 24px;
+			background-color: transparent;
+			border: none;
+			cursor: pointer;
+		}
+	}
+
+	&__icon-burger-menu {
+		@media screen and (max-width: 1240px) {
+			width: 20px;
+			height: 14px;
+			fill: var(--beauty-landing-4);
+		}
+	}
+}

@@ -1,0 +1,44 @@
+/* BASE */
+* {
+	box-sizing: border-box;
+}
+
+.section-title {
+	font-family: Play, sans-serif;
+	font-size: 64px;
+	font-weight: 700;
+	line-height: normal;
+}
+
+body {
+	margin: 0 auto;
+	font-family: Roboto, sans-serif;
+	font-size: 18px;
+	font-weight: 400;
+	background-color: transparent;
+}
+
+a {
+	display: inline-block;
+}
+li {
+	list-style-type: none;
+	text-decoration: none;
+}
+
+.section-title {
+	font-family: Play, sans-serif;
+	font-size: 64px;
+	font-weight: 700;
+	line-height: normal;
+}
+address {
+	font-style: normal;
+}
+
+.container {
+	width: 100%;
+	max-width: 1240px;
+	margin: 0 auto;
+	padding: 0;
+}

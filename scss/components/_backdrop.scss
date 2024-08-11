@@ -1,0 +1,73 @@
+/* Modal */
+.backdrop {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	background-color: rgba(1, 31, 74, 0.4);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px 0px;
+	flex-shrink: 0;
+	transition: opacity 0.3s, visibility 0.3s;
+	z-index: 2;
+
+	&__modal {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 42px 0px;
+		max-width: 723px;
+		width: 100%;
+		max-height: 681px;
+		height: 100%;
+		background-color: var(--beauty-landing-2);
+		background-image: url("../media/modal.svg");
+		border-radius: 48px;
+		position: relative;
+		overflow-y: auto;
+	}
+}
+
+.backdrop.is-hidden {
+	opacity: 0;
+	visibility: hidden;
+	pointer-events: none;
+}
+.modal-btn-close {
+	position: absolute;
+	top: 42px;
+	right: 42px;
+}
+
+.modal-title {
+	color: var(--beauty-landing-4);
+	text-align: center;
+	font-family: Play, sans-serif;
+	width: 435px;
+	height: 148px;
+	font-size: 64px;
+	font-weight: 700;
+	line-height: 1.17;
+	margin-top: 0px;
+	margin-bottom: 40px;
+}
+
+.modal-paragraf {
+	max-width: 100%;
+	margin-bottom: 32px;
+	color: var(--beauty-landing-4);
+	width: 274px;
+	height: 52px;
+	font-size: 22px;
+	font-weight: 600;
+	line-height: 1.2;
+	text-align: center;
+	margin: 0 0 32px 0;
+}
+
+.modal-span {
+	color: var(--beauty-landing-1);
+}

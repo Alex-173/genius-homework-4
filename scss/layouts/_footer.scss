@@ -1,0 +1,152 @@
+/* FOOTER */
+.footer {
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	background-color: var(--beauty-landing-2);
+	font-size: 16px;
+	background-image: url(../media/footer-photo.png);
+	background-image: url(../media/footer-vector.svg);
+	background-size: cover;
+	background-repeat: repeat;
+	background-position: left bottom;
+	background-size: auto;
+	flex-shrink: 0;
+	position: relative;
+
+	@media screen and (max-width: $bp-desktop) {
+		width: 100%;
+	}
+
+	&::after {
+		background-image: url(../media/footer-photo.png);
+		width: 247px;
+		height: 152px;
+		position: absolute;
+		right: 0;
+		bottom: 0;
+	}
+
+	&__container {
+		width: 1240px;
+		display: flex;
+		justify-content: flex-start;
+		gap: 186px;
+		width: 1240px;
+		margin: 0 auto;
+		padding: 56px 0%;
+		gap: 186px;
+		margin-bottom: 42px;
+
+		@media screen and (max-width: $bp-desktop) {
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			gap: 0px;
+			margin: 0 auto;
+			align-items: center;
+		}
+	}
+
+	&__logo {
+		@media screen and (max-width: $bp-desktop) {
+			margin-bottom: 42px;
+		}
+		@media screen and (max-width: $bp-tablet) {
+			font-size: 16px;
+			margin-bottom: 42px;
+		}
+	}
+	&__nav {
+		@media screen and (max-width: $bp-desktop) {
+			margin-bottom: 16px;
+		}
+	}
+
+	&__list {
+		display: flex;
+		flex-direction: column;
+		text-decoration: none;
+		gap: 16px;
+		margin: 0px;
+		padding: 0px;
+
+		@media screen and (max-width: $bp-desktop) {
+			align-items: center;
+		}
+	}
+	&__link,
+	&__address {
+		display: flex;
+		flex-direction: column;
+		font-size: 16px;
+		color: #fff;
+		line-height: normal;
+		text-decoration: none;
+		gap: 16px;
+		transition: color 0.3s ease;
+	}
+
+	&__link:hover,
+	&__address:hover {
+		color: var(--beauty-landing-1);
+		line-height: normal;
+		cursor: pointer;
+		text-shadow: 0px 1px 1px var(--beauty-landing-1);
+	}
+
+	&__contact {
+		display: flex;
+		flex-direction: column;
+		width: 192px;
+		margin: 0px;
+		padding: 0px;
+		gap: 16px;
+
+		@media screen and (max-width: $bp-desktop) {
+			display: none;
+		}
+	}
+
+	&__icons {
+		display: flex;
+		gap: 24px;
+		margin-top: 16px;
+
+		@media screen and (max-width: $bp-desktop) {
+			display: none;
+		}
+	}
+
+	&__icons_mobile {
+		display: none;
+		@media screen and (max-width: $bp-desktop) {
+			display: flex;
+		}
+	}
+
+	&__icon {
+		width: 42px;
+		height: 42px;
+		fill: var(--beauty-landing-4);
+	}
+
+	&__address-copyright {
+		color: #747272;
+		font-size: 13px;
+		font-style: normal;
+		line-height: normal;
+	}
+
+	&__copyright {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin: 0 auto;
+
+		@media screen and (max-width: $bp-desktop) {
+			flex-direction: column;
+		}
+	}
+}

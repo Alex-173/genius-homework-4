@@ -1,0 +1,16 @@
+.accent {
+	color: var(--beauty-landing-1);
+}
+
+.accent-zone {
+	text-transform: capitalize;
+	color: var(--beauty-landing-1);
+	@media screen and (max-width: $bp-tablet) {
+		font-weight: 700;
+	}
+}
+
+.accent-paragraf {
+	font-weight: 600;
+	text-transform: capitalize;
+}
