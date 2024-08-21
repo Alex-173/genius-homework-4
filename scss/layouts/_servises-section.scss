@@ -35,6 +35,8 @@
 	}
 
 	&__swiper {
+		max-width: 1280px;
+		width: 100%;
 		overflow: hidden;
 	}
 	&__list {
@@ -45,6 +47,10 @@
 	&__link {
 		width: 344px;
 		height: 456px;
+
+		@media screen and (max-width: $bp-desktop) {
+			max-width: 344px;
+		}
 	}
 
 	&__img {
@@ -96,7 +102,7 @@
 		cursor: pointer;
 
 		@media screen and (max-width: $bp-desktop) {
-			// display: none;
+			display: none;
 		}
 		@media screen and (max-width: $bp-tablet) {
 			display: none;
