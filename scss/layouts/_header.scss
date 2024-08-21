@@ -18,14 +18,16 @@
 	}
 
 	&__container {
-		width: 1240px;
+		max-width: 1240px;
+		width: 100%;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		gap: 240px;
+		// gap: 240px;
 
 		@media screen and (max-width: 1240px) {
 			width: 100%;
+			justify-content: space-around;
 		}
 	}
 
@@ -44,14 +46,14 @@
 
 	&__menu {
 		display: flex;
-		width: 525px;
+		max-width: 525px;
 		gap: 56px;
 		flex-grow: 1;
 		white-space: nowrap;
 		padding: 0;
 		justify-content: center;
 
-		@media screen and (max-width: 1240px) {
+		@media screen and (max-width: 900px) {
 			display: none;
 		}
 	}
@@ -73,7 +75,7 @@
 	&__icons {
 		display: flex;
 		gap: 32px;
-		@media screen and (max-width: 1240px) {
+		@media screen and (max-width: 900px) {
 			display: none;
 		}
 	}
@@ -91,7 +93,7 @@
 	&__burger-btn {
 		display: none;
 
-		@media screen and (max-width: 1240px) {
+		@media screen and (max-width: 900px) {
 			display: block;
 			position: absolute;
 			top: 30px;

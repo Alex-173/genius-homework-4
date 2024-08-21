@@ -1,19 +1,43 @@
 /* Form */
 .modal-container {
 	width: 435px;
-	display: inline-flex;
+	display: flex;
 	flex-direction: column;
 	align-items: center;
-	align-items: center;
+	justify-content: start;
+	max-height: 597px;
 
 	@media screen and (max-width: $bp-desktop) {
 		min-width: 241px;
+	}
+}
+
+.modal-paragraf {
+	max-width: 100%;
+	margin-bottom: 32px;
+	color: var(--beauty-landing-4);
+	width: 274px;
+	height: 52px;
+	font-size: 22px;
+	font-weight: 600;
+	line-height: 1.2;
+	text-align: center;
+	margin: 0 0 32px 0;
+	@media screen and (max-width: $bp-tablet) {
+		font-weight: 700;
+		margin-bottom: 24px;
+		font-size: 16px;
 	}
 }
 .form-field {
 	margin-bottom: 24px;
 	width: 310px;
 	height: 51px;
+
+	@media screen and (max-width: $bp-tablet) {
+		max-width: 241px;
+		max-height: 46px;
+	}
 }
 .form-label {
 	display: none;
@@ -31,6 +55,7 @@
 	border: 2px solid #747272;
 	border-radius: 32px;
 	background-color: transparent;
+	color: var(--beauty-landing-4);
 }
 
 .form-input:focus {
@@ -50,18 +75,20 @@
 
 .form-button {
 	display: flex;
-	margin: 0 auto 8px;
-	width: 281px;
+	margin: 0 auto;
+	max-width: 310px;
 	padding: 16px 32px;
-	font-size: 17px;
+	font-size: 18px;
 	white-space: nowrap;
+	margin-bottom: 8px;
 
-	@media screen and (max-width: $bp-desktop) {
+	@media screen and (max-width: $bp-tablet) {
+		max-width: 241px;
+		padding: 12px 20px;
 		font-size: 16px;
-		width: 100%;
-		min-width: 194px;
 	}
 }
+
 .modal-btn-close {
 	border: 0px;
 	background-color: #011c44;

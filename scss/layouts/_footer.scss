@@ -36,7 +36,6 @@
 		margin: 0 auto;
 		padding: 56px 0%;
 		gap: 186px;
-		margin-bottom: 42px;
 
 		@media screen and (max-width: $bp-desktop) {
 			width: 100%;
@@ -147,6 +146,15 @@
 
 		@media screen and (max-width: $bp-desktop) {
 			flex-direction: column;
+		}
+	}
+	&__medi {
+		position: absolute;
+		right: 0;
+		bottom: 0;
+
+		@media screen and (max-width: $bp-tablet) {
+			display: none;
 		}
 	}
 }

@@ -7,17 +7,16 @@
 	left: 0;
 	background-color: rgba(1, 31, 74, 0.4);
 	display: flex;
-	justify-content: center;
 	align-items: center;
-	padding: 20px 0px;
-	flex-shrink: 0;
+	padding: 20px;
 	transition: opacity 0.3s, visibility 0.3s;
 	z-index: 2;
 
 	&__modal {
+		margin: 0 auto;
 		display: flex;
 		justify-content: center;
-		align-items: center;
+		align-items: start;
 		padding: 42px 0px;
 		max-width: 723px;
 		width: 100%;
@@ -46,26 +45,19 @@
 	color: var(--beauty-landing-4);
 	text-align: center;
 	font-family: Play, sans-serif;
-	width: 435px;
-	height: 148px;
+	max-width: 435px;
 	font-size: 64px;
 	font-weight: 700;
 	line-height: 1.17;
 	margin-top: 0px;
 	margin-bottom: 40px;
-}
 
-.modal-paragraf {
-	max-width: 100%;
-	margin-bottom: 32px;
-	color: var(--beauty-landing-4);
-	width: 274px;
-	height: 52px;
-	font-size: 22px;
-	font-weight: 600;
-	line-height: 1.2;
-	text-align: center;
-	margin: 0 0 32px 0;
+	@media screen and (max-width: $bp-tablet) {
+		font-weight: 700;
+		margin-bottom: 24px;
+		font-size: 32px;
+		width: 240px;
+	}
 }
 
 .modal-span {
